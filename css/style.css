@@ -1,5 +1,58 @@
 html, 
 body {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* ########## NAVBAR ########## */
+.navbar-container {
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+.navbar-title {
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.navbar-title img {
+    margin-right: 10px;
+    height: 1.65em;
+}
+
+.navbar-container ul {
+    list-style: none;
+    gap: 2em;
+}
+
+/* ########## GRID ########## */
+.blog-display {
+    display: grid;
+    border: 1px solid red;
+    grid-template: 700px / repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, 800px);
+}
+
+.blog-display > div:first-child {
+    grid-column: 1 / 4;
+    color: red;
+}
+
+.article-card {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+
+
+.article-img {
+    width: 100%;
+}
+
+/* ########## FLEX CONTAINERS ########## */
+.navbar-container,
+.navbar-container ul,
+.navbar-title {
+    display: flex;
 }
