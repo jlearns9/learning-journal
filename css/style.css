@@ -1,11 +1,24 @@
 html, 
 body {
     margin: 0;
-    padding: 1rem;
     box-sizing: border-box;
 }
 
+.about-me-display {
+    background-image: url('../images/about-me-background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 300px;
+    padding: 1rem;
+}
+
 /* ########## NAVBAR ########## */
+nav {
+    padding: 1rem;
+}
+
 .navbar-container {
     justify-content: space-between;
     align-items: last baseline;
@@ -34,20 +47,14 @@ body {
     grid-auto-rows: minmax(100px, 800px);
 }
 
-.blog-display > div:first-child {
-    grid-column: 1 / 4;
-    color: red;
-}
-
 .article-card {
     border: 2px solid gray;
-    padding: 10px;
+    padding: 1rem;
 }
-
-
 
 .article-img {
     width: 100%;
+    height: 50vh;
 }
 
 /* ########## FLEX CONTAINERS ########## */
@@ -55,4 +62,8 @@ body {
 .navbar-container ul,
 .navbar-title {
     display: flex;
+}
+
+@media (min-height: 500px) {
+    body;
 }

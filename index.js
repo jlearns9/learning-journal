@@ -1,6 +1,8 @@
-import articles from "./blog.js";
+import { articles } from "./blog.js";
+import { aboutMe } from "./blog.js";
 
 const blogLayout = document.getElementById('blog-layout')
+const aboutMeLayout = document.getElementById('about-me-layout')
 
 articles.forEach((article, index) => {
     blogLayout.innerHTML += `
@@ -8,5 +10,16 @@ articles.forEach((article, index) => {
             <img class='article-img' src=${article.image}>
             <h2>${article.title}</h2>
             <p>${article.text}<p>
-        </div>`
+        </div>
+        `
 })
+
+function aboutMeDisplay() {
+    aboutMeLayout.innerHTML = `
+    <h3>${aboutMe.date}</h3>
+    <h1>${aboutMe.title}</h1>
+    <p>${aboutMe.text}</p>
+    `
+}
+
+aboutMeDisplay()
