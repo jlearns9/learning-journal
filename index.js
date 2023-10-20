@@ -16,9 +16,11 @@ articles.forEach((article, index) => {
 
 function aboutMeDisplay() {
     aboutMeLayout.innerHTML = `
-    <h3>${aboutMe.date}</h3>
-    <h1>${aboutMe.title}</h1>
-    <p>${aboutMe.text}</p>
+    <div class='about-me-info'>
+        <h3>${aboutMe.date}</h3>
+        <h1>${aboutMe.title}</h1>
+        <p>${aboutMe.text}</p>
+    </div>
     `
 }
 
