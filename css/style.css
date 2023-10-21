@@ -2,43 +2,26 @@ html,
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
 }
-
-.about-me-display {
-    background-image: url('../images/about-me-background-1.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    height: 300px;
-    padding: 1rem;
-    align-items: end;
-}
-
-.about-me-info h1 {
-    font-size: 2.5rem;
-}
-
-
 
 /* ########## NAVBAR ########## */
 nav {
-    padding: 1rem;
-}
-
-.navbar-container {
     justify-content: space-between;
     align-items: last baseline;
+    padding: .5rem 1.25rem;
 }
 
 .navbar-title {
-    font-size: 1.25rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .85rem;
+    font-weight: 700;
     align-items: center;
 }
 
 .navbar-title img {
-    margin-right: 10px;
-    height: 1.65em;
+    margin-right: .25rem;
+    width: 1.75em;
 }
 
 .navbar-container ul {
@@ -46,28 +29,78 @@ nav {
     gap: 2em;
 }
 
-/* ########## GRID ########## */
-.blog-display {
-    display: grid;
-    border: 1px solid red;
-    grid-template: 700px / repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, 800px);
+.navbar li a {
+    color: #090909;
+    font-size: .8rem;
+    font-weight: bold;
+    text-decoration: none;
 }
+
+/* ########## ABOUT ME ########## */
+.about-me-display {
+    background-image: url('../images/about-me-background-2.png');
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    height: 293px;
+    padding: 1.25rem;
+    align-items: end;
+}
+
+.about-me-display h1 {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 108.2%;
+    margin: .5rem 0rem
+}
+
+.about-me-display h4 {
+    margin-top: .5rem;
+}
+
+.about-me-display h5 {
+    font-size: .75rem;
+    margin-bottom: .5rem;
+}
+
+.about-me-display h5,
+.about-me-display h4 {
+    font-weight: 400;
+}
+
+/* ########## GRID ########## */
 
 .article-card {
-    border: 2px solid gray;
-    padding: 1rem;
+    padding: 1.25rem;
+    min-width: 280.5px;
+
 }
 
-.article-img {
+.article-card img {
     width: 100%;
-    height: 50vh;
+    height: 100%;
+    max-width: 374px;
+    max-height: 232px;
 }
 
-/* ########## FLEX CONTAINERS ########## */
-.navbar-container,
+
+/* ########## FLEX ########## */
+nav,
 .navbar-container ul,
 .navbar-title,
 .about-me-display {
     display: flex;
+}
+
+/* MEDIA QUERIES */
+@media(min-width: 500px) {
+    body {
+        color: green;
+    }
+    .blog-display {
+        display: grid;
+        grid-template: 700px / repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, 800px);
+    }
 }
