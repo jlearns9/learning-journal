@@ -4,6 +4,24 @@ import { aboutMe } from "./blog.js";
 const blogLayout = document.getElementById('blog-layout')
 const aboutMeLayout = document.getElementById('about-me-layout')
 
+document.querySelector(".drop-menu").addEventListener("click", function() {
+    let sidebar = document.querySelector(".sidebar");
+    let overlay = document.querySelector(".overlay");
+    
+    if (sidebar.style.right === "0px" || sidebar.style.right === "") {
+        sidebar.style.right = "-300px";
+        overlay.style.display = "none";
+    } else {
+        sidebar.style.right = "0px";
+        overlay.style.display = "block";
+    }
+});
+
+document.querySelector(".exit-sidebar").addEventListener("click", function() {
+    document.querySelector(".sidebar").style.right = "-300px";
+    document.querySelector(".overlay").style.display = "none";
+});
+
 function aboutMeDisplay() {
     aboutMeLayout.innerHTML = `
     <div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div class="overlay"></div>
         <nav class='navbar-container'>
             <div class='navbar-title'>
                 <img src='images/nav-icon.png' alt=''>
@@ -17,11 +19,23 @@
             </div>
             <ul class='navbar'>
                 <li><a href='#'>HOME</a></li>
-                <li><a href='#'>ABOUT ME</a></li>
+                <li><a href='#'>ABOUT</a></li>
+            </ul>
+            <i class="drop-menu fa-solid fa-bars"></i>
+            <ul class="sidebar">
+                <button class="exit-sidebar">x</button>
+                <div class="sidebar-links-container">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                </div>
             </ul>
         </nav>
         <div id='about-me-layout' class='about-me-display'></div>
         <div id='blog-layout' class='blog-display'></div>
+        <footer>
+            <h5>My Learning Journal</h5>
+            <h6>Copyright ©2022</h5>
+        </footer>
         <script type='module' src='blog.js'></script>
         <script type='module' src='index.js'></script>
     </body>
