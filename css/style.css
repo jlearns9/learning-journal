@@ -192,7 +192,7 @@ nav,
 }
 
 /* MEDIA QUERIES */
-@media(max-width: 414px) { 
+@media(max-width: 500px) { 
     .navbar li {
         display: none;
     }
