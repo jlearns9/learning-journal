@@ -3,6 +3,14 @@ import { aboutMe } from "./blog.js";
 
 const blogLayout = document.getElementById('blog-layout')
 const aboutMeLayout = document.getElementById('about-me-layout')
+const recent = document.getElementById('recent')
+
+function thistest() {
+    recent.innerHTML = `
+    <h1>${aboutMe.date}<h1>
+    `
+}
+thistest()
 
 document.querySelector(".drop-menu").addEventListener("click", function() {
     let sidebar = document.querySelector(".sidebar");

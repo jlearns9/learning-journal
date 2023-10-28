@@ -101,7 +101,7 @@ nav {
     display: none; /* hidden by default */
 }
 
-/* ########## ABOUT ME ########## */
+/* ########## HOME PAGE ########## */
 .about-me-display {
     background-image: url('../images/about-me-background-2.png');
     background-size: cover;
@@ -129,8 +129,29 @@ nav {
     margin-bottom: .5rem;
 }
 
-/* ########## ARTICLES ########## */
+/* ########## AOBUT PAGE ########## */
+.page-content {
+    margin: 2rem 1.25rem;
+}
 
+.page-content p {
+    font-size: 1rem;
+}
+
+.header-content h1 {
+    font-size: 2.17rem;
+}
+
+.header-content img {
+    width: 11rem;
+}
+
+.recent-posts {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ########## ARTICLES ########## */
 .article-card {
     padding: 1.25rem;
     margin-bottom: 0px;
