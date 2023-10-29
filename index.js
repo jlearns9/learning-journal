@@ -1,16 +1,8 @@
-import { articles } from "./blog.js";
-import { aboutMe } from "./blog.js";
+import { articles, aboutMe } from "./blog.js";
 
 const blogLayout = document.getElementById('blog-layout')
 const aboutMeLayout = document.getElementById('about-me-layout')
 const recent = document.getElementById('recent')
-
-function thistest() {
-    recent.innerHTML = `
-    <h1>${aboutMe.date}<h1>
-    `
-}
-thistest()
 
 document.querySelector(".drop-menu").addEventListener("click", function() {
     let sidebar = document.querySelector(".sidebar");
@@ -45,10 +37,10 @@ aboutMeDisplay()
 articles.forEach((article, index) => {
     blogLayout.innerHTML += `
         <div class='article-card'>
-            <img src=${article.image}>
-            <h5>${article.date}<h5>
+            <img src="${article.image}">
+            <h5>${article.date}</h5>
             <h2>${article.title}</h2>
-            <p>${article.text}<p>
+            <p>${article.text}</p>
         </div>
         `
 })

@@ -144,6 +144,8 @@ nav {
 
 .header-content img {
     width: 11rem;
+    height: 100%;
+    margin-right: 2rem;
 }
 
 .recent-posts {
@@ -257,3 +259,16 @@ nav,
     }
 }
 
+@media(min-width: 600px) {
+    .header-content {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 880px) {
+    .about-me-info {
+        max-width: 850px;
+        margin: auto;
+    }
+}
